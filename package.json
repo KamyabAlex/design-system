@@ -9,7 +9,7 @@
     "stylelint": "^14.8.2"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^8.0.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "stylelint-config-prettier": "^9.0.3",
@@ -18,7 +18,8 @@
   },
   "scripts": {
     "lint": "stylelint './**/*.scss'",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
