@@ -1,4 +1,7 @@
 {
+  "rules": {
+    "color-no-invalid-hex": true
+  },
   "plugins": ["stylelint-prettier"],
   "extends": [
     "stylelint-config-sass-guidelines",
