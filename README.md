@@ -4,7 +4,7 @@
 ## Installation
 
 ```bash
-Yarn install
+Yarn
 ```
 
 ## How it works

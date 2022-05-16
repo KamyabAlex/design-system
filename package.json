@@ -1,27 +1,17 @@
 {
-  "name": "ds",
+  "name": "@ds/core",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/KamyabAlex/design-system.git",
+  "author": "Alex Beygi Khouzani <alex.beygikhouzani@hm.com>",
   "license": "MIT",
-  "dependencies": {
-    "normalize-css": "^2.3.1",
-    "normalize-scss": "^7.0.1",
-    "stylelint": "^14.8.2"
-  },
   "devDependencies": {
-    "husky": "^8.0.0",
-    "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-sass-guidelines": "^9.0.1",
-    "stylelint-prettier": "^2.0.0"
+    "lerna": "^4.0.0"
   },
-  "scripts": {
-    "lint": "stylelint './**/*.scss'",
-    "lint:fix": "yarn lint --fix",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.scss": "yarn lint:fix"
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   }
 }
