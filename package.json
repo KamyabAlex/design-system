@@ -11,7 +11,15 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "playgrounds/*"
+    ],
+    "nohoist": [
+      "**/normalize-scss"
     ]
+  },
+  "scripts": {
+    "build": "yarn lerna run build",
+    "clean:node-modules": "find . -name node_modules -exec rm -rf {} \\;"
   }
 }
